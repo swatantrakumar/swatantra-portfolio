@@ -1,0 +1,156 @@
+.experience-section {
+  padding: 5rem 0;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-right: 2rem;
+  white-space: nowrap;
+}
+
+.section-line {
+  height: 1px;
+  background: var(--card-border);
+  flex-grow: 1;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 2px;
+  background: var(--card-border);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 60px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 11px;
+  top: 6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  border: 4px solid var(--accent-primary);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-dot {
+  background: var(--accent-primary);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.8);
+}
+
+.timeline-content {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  border-color: var(--card-hover-border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.timeline-header h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.period {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: var(--accent-secondary);
+  font-weight: 500;
+  background: rgba(139, 92, 246, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+}
+
+.company {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.description {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.tech-tag {
+  font-size: 0.85rem;
+  color: var(--accent-primary);
+  background: rgba(59, 130, 246, 0.1);
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+  background: var(--accent-primary);
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .timeline::before {
+    left: 15px;
+  }
+  .timeline-dot {
+    left: 6px;
+  }
+  .timeline-item {
+    padding-left: 45px;
+  }
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
