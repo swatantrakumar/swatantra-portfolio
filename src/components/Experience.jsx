@@ -3,28 +3,36 @@ import './Experience.css';
 const Experience = () => {
   const experiences = [
     {
+      id: 0,
+      role: 'Senior Software Engineer',
+      company: 'Egreen Farms Private Limited',
+      period: 'Jan 2025 - Present',
+      description: 'Working on Accounting software ERP utilizing a modern technology stack to build robust cross-platform desktop applications.',
+      tech: ['React', 'Electron', 'NestJS', 'SQLite']
+    },
+    {
       id: 1,
       role: 'Senior Software Engineer',
-      company: 'Tech Innovators Inc.',
-      period: '2021 - Present',
-      description: 'Led the architecture and development of a microservices-based e-commerce platform. Mentored a team of 5 junior developers, improving code review processes and reducing production bugs by 40%.',
-      tech: ['React', 'Node.js', 'AWS', 'GraphQL']
+      company: 'Quality & Testing Infosolution Pvt. Ltd.',
+      period: 'Oct 2020 - Dec 2024',
+      description: 'Developed and maintained web applications using Angular. Integrated RESTful APIs using Java and Node.js to connect with MongoDB. Successfully developed and launched LIMS Project for E-Labs, improving application performance by 80%.',
+      tech: ['Angular', 'Node.js', 'Java', 'MongoDB']
     },
     {
       id: 2,
       role: 'Software Engineer',
-      company: 'Global Solutions LLC',
-      period: '2018 - 2021',
-      description: 'Developed and maintained enterprise-level web applications. Migrated legacy monolithic architecture to RESTful APIs and React frontends, increasing performance by 60%.',
-      tech: ['JavaScript', 'React', 'Express', 'MongoDB']
+      company: 'Mclear Technology Solution Pvt. Ltd.',
+      period: 'Jan 2020 - Oct 2020',
+      description: 'Designed and implemented interactive user interfaces using Angular. Built and maintained backend services with Node.js and Express.js, integrating with MongoDB for data storage and retrieval.',
+      tech: ['Angular', 'Node.js', 'Express', 'MongoDB']
     },
     {
       id: 3,
-      role: 'Frontend Developer',
-      company: 'Creative Digital Agency',
-      period: '2016 - 2018',
-      description: 'Built responsive and interactive user interfaces for various clients. Collaborated closely with UI/UX designers to implement pixel-perfect designs.',
-      tech: ['HTML/CSS', 'Vue.js', 'Sass', 'Figma']
+      role: 'Web Developer',
+      company: 'Muniwar Technologies Pvt. Ltd.',
+      period: 'Oct 2017 - Dec 2019',
+      description: 'Developed dynamic and interactive website that ensured high traffic, page views, and user experience. Designed and developed user-friendly optimized check-out pages.',
+      tech: ['HTML', 'CSS', 'JavaScript']
     }
   ];
 

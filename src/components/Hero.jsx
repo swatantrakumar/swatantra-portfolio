@@ -6,11 +6,12 @@ const Hero = () => {
       <div className="hero-content">
         <h2 className="greeting">Hi, I'm</h2>
         <h1 className="name">Swatantra Kumar</h1>
-        <h3 className="title">Senior Software Engineer</h3>
+        <h3 className="title">Full Stack Developer</h3>
         <p className="bio">
-          I build scalable web applications and distributed systems. Passionate about clean code, 
-          architecture, and mentoring teams to deliver exceptional digital experiences. 
-          With over 8 years of experience in React, Node.js, and cloud technologies.
+          I bring 7 years of experience in the IT sector, specializing in building robust front-end 
+          applications using Angular and scalable back-end services with Node.js. 
+          I have a deep interest in creating dynamic systems and mentoring cross-functional teams 
+          to ensure project success.
         </p>
         <div className="actions">
           <a href="#contact" className="btn btn-primary">Get In Touch</a>
@@ -19,11 +20,13 @@ const Hero = () => {
       </div>
       <div className="hero-image-wrapper">
         <div className="hero-image-bg"></div>
-        <img 
-          src="/profile.jpg" 
-          alt="Swatantra Kumar" 
-          className="hero-image"
-        />
+        <div className="hero-image-container">
+          <img 
+            src="/profile.jpg" 
+            alt="Swatantra Kumar" 
+            className="hero-image"
+          />
+        </div>
       </div>
     </section>
   );
