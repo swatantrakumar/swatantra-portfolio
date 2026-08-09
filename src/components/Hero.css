@@ -96,25 +96,40 @@
 
 .hero-image-bg {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 320px;
+  height: 320px;
   background: var(--gradient-text);
   border-radius: 50%;
-  filter: blur(60px);
+  filter: blur(50px);
   opacity: 0.3;
   animation: pulse 4s infinite alternate;
 }
 
-.hero-image {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
+.hero-image-container {
+  width: 320px;
+  height: 320px;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   border: 4px solid var(--card-border);
   position: relative;
   z-index: 1;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   animation: morph 8s ease-in-out infinite;
+  overflow: hidden;
+  background-color: #ffffff; /* White background for passport photo feel */
+  /* Fix GPU blur for high res images */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: border-radius;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* ensures the entire image fits */
+  object-position: center 20%;
+  transform: scale(1.15); /* Middle ground zoom */
+  /* Crisper rendering */
+  image-rendering: -webkit-optimize-contrast;
 }
 
 @keyframes pulse {
